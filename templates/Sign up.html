@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Elegant Account Login Form with Avatar Icon</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body {
+	color: #999;
+	background: #f5f5f5;
+	font-family: 'Varela Round', sans-serif;
+}
+.form-control {
+	box-shadow: none;
+	border-color: #ddd;
+}
+.form-control:focus {
+	border-color: #4aba70; 
+}
+.signup-form {
+	/* width: 350px; */
+	margin: 0 auto;
+	padding: 8% 0;
+}
+.signup-form form {
+	color: #434343;
+	border-radius: 1px;
+	margin-bottom: 15px;
+	background: #fff;
+	border: 1px solid #f3f3f3;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form h4 {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.signup-form .avatar {
+	color: #fff;
+	margin: 0 auto 30px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #4aba70;
+	padding: 15px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.signup-form .avatar i {
+	font-size: 62px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form .form-control, .signup-form .btn {
+	min-height: 40px;
+	border-radius: 2px; 
+	transition: all 0.5s;
+}
+.signup-form .close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.signup-form .btn, .signup-form .btn:active {
+	background: #4aba70 !important;
+	border: none;
+	line-height: normal;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+	background: #42ae68 !important;
+}
+.signup-form .checkbox-inline {
+	float: left;
+}
+.signup-form input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+}
+.signup-form .forgot-link {
+	float: right;
+}
+.signup-form .small {
+	font-size: 13px;
+}
+.signup-form a {
+	color: #4aba70;
+}
+.nav_padding{
+    padding-left: 85%;
+    
+}
+.crnt{
+    font-weight: 900;
+    
+
+    color: #42ae68;
+    
+}
+</style>
+</head>
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Project</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 nav_padding mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active crnt" href="/">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="login_1.html">login</a>
+              </li>
+            
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+
+    <!-- nav bar end -->
+<div class="signup-form col-lg-3 ">    
+    <form action="" method="post">
+		<div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    	<h4 class="modal-title">Create New Account</h4>
+        <div class="form-group">
+        	<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div>   
+      
+        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Sign up">              
+    </form>			
+    <div class="text-center small"> Already Have An Account <a href="login_1.html"> Login here</a></div>
+</div>
+</body>
+</html>

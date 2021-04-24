@@ -1,0 +1,32 @@
+class Birds {
+  String legs = "two";
+  String wings = "2";
+  void canEat(){
+	System.out.println("eating");
+  }
+}
+class Duck extends Birds {
+    boolean swim = true;
+    boolean canFly = false;
+}
+class Sparrow extends Birds {
+    boolean canSwin = false;
+    boolean canFly = true;
+}
+class Main {
+public static void main(String args[]){
+	Duck duck = new Duck();
+	System.out.println("Duck can swim = " + duck.swim);
+	System.out.println("Duck can fly = " + duck.canFly);
+	duck.canEat();
+	
+	Sparrow sparrow = new Sparrow();
+	System.out.println("Sparrow can swim = " + sparrow.canSwin);
+	System.out.println("Sparrow can fly = " + sparrow.canFly);
+
+   }
+}
+
+
+
+
