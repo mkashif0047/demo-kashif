@@ -1,0 +1,47 @@
+class student{
+    private String name;
+    private int id;
+
+    public void setname(String Nname)
+    {
+        this.name = Nname;
+    }
+    public String getname()
+    {
+        return name;
+    }
+   class student{
+    private String name;
+    private int id;
+
+    public void setname(String Nname)
+    {
+        this.name = Nname;
+    }
+    public String getname()
+    {
+        return name;
+    }
+    public void setid(int Nid)
+    {
+        this.id = Nid;
+    }
+    public int getid()
+    {
+        return id;
+    }
+}    
+public class Main
+{
+    public static void main(String[] args)
+   {
+       student objn = new student();
+       objn.setname("abc");
+       System.out.println(objn.getname());
+
+       student objid = new student();
+       objid.setid(99);
+       System.out.println(objid.getid());
+
+   }
+}
